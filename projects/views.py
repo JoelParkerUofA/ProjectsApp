@@ -20,3 +20,7 @@ def project_detail(request, pk):
         "project": project
     }
     return render(request, "projects/project_detail.html", context)
+
+# Create a view for home
+def home(request):
+    return render(request, "pages/home.html")

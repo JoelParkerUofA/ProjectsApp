@@ -10,7 +10,8 @@ from django.db import models
 # Here we create a table with title, description and 
 # technology. The table is called Projects
 class Project(models.Model):
-    title = models.CharField(max_length = 100)
+    title = models.CharField(max_length=100)
     description = models.TextField()
-    technology = models.CharField(max_length = 20)
+    technology = models.CharField(max_length=20)
+    report_html = models.TextField()
     
